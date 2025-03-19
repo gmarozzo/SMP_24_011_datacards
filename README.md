@@ -1,0 +1,1 @@
+HiggsCombine datacards for SMP-24-011. Tested with Combinev10 and recommended CMSSW version CMSSW_14_1_0_pre4.

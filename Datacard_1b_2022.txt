@@ -1,0 +1,219 @@
+imax 2  number of channels
+jmax 9  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+
+------------
+shapes * * ./Inputs/1b_2022_mll.root mll_$PROCESS_$CHANNEL mll_$PROCESS_$CHANNEL_$SYSTEMATIC
+------------
+
+bin1 bin2
+observation -1 -1
+ 
+------------
+bin             e1b_2022 e1b_2022 e1b_2022 e1b_2022 e1b_2022 e1b_2022 e1b_2022 e1b_2022 e1b_2022 e1b_2022 mu1b_2022 mu1b_2022 mu1b_2022 mu1b_2022 mu1b_2022 mu1b_2022 mu1b_2022 mu1b_2022 mu1b_2022 mu1b_2022
+process         ww nonprompt tt tw dy semileptt wz zz vvv rest ww nonprompt tt tw dy semileptt wz zz vvv rest
+process          -1 2 -3 4 5 6 7 8 9 10 -1 2 -3 4 5 6 7 8 9 10
+rate            -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+------------
+
+lumi_13p6TeV_2022 lnN 1.014 - 1.014 1.014 1.014 1.014 1.014 1.014 1.014 1.014   1.014 - 1.014 1.014 1.014 1.014 1.014 1.014 1.014 1.014
+CMS_pileup_13p6TeV shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+
+top_pt_reweighting shape - - 1 1 - 1 - - - -  - - 1 1 - 1 - - - -
+ps_hdamp shape - - 1 - - - - - - -  - - 1 - - - - - - -
+
+cross_section_tw     lnN  - - - 0.981/1.028 - - - - - -   - - - 0.981/1.028 - - - - - -
+
+QCDscale_fac_ww shape 1 - - - - - - - - -   1 - - - - - - - - -
+QCDscale_fac_tt shape - - 1 - - 1 - - - -   - - 1 - - 1 - - - -
+QCDscale_fac_tw shape - - - 1 - - - - - -   - - - 1 - - - - - -
+QCDscale_fac_dy shape - - - - 1 - - - - -   - - - - 1 - - - - -
+QCDscale_fac_wz shape - - - - - - 1 - - -   - - - - - - 1 - - -
+QCDscale_fac_zz shape - - - - - - - 1 - -   - - - - - - - 1 - -
+QCDscale_fac_vvv shape - - - - - - - - 1 -   - - - - - - - - 1 -
+QCDscale_fac_rest shape - - - - - - - - - 1   - - - - - - - - - 1
+QCDscale_ren_ww shape 1 - - - - - - - - -   1 - - - - - - - - -
+QCDscale_ren_tt shape - - 1 - - 1 - - - -   - - 1 - - 1 - - - -
+QCDscale_ren_tw shape - - - 1 - - - - - -   - - - 1 - - - - - -
+QCDscale_ren_dy shape - - - - 1 - - - - -   - - - - 1 - - - - -
+QCDscale_ren_wz shape - - - - - - 1 - - -   - - - - - - 1 - - -
+QCDscale_ren_zz shape - - - - - - - 1 - -   - - - - - - - 1 - -
+QCDscale_ren_vvv shape - - - - - - - - 1 -   - - - - - - - - 1 -
+QCDscale_ren_rest shape - - - - - - - - - 1   - - - - - - - - - 1
+ps_isr_ww shape 1 - - - - - - - - -   1 - - - - - - - - -
+ps_isr_tt shape - - 1 - - 1 - - - -   - - 1 - - 1 - - - -
+ps_isr_tw shape - - - 1 - - - - - -   - - - 1 - - - - - -
+ps_isr_dy shape - - - - 1 - - - - -   - - - - 1 - - - - -
+ps_isr_wz shape - - - - - - 1 - - -   - - - - - - 1 - - -
+ps_isr_zz shape - - - - - - - 1 - -   - - - - - - - 1 - -
+ps_isr_vvv shape - - - - - - - - 1 -   - - - - - - - - 1 -
+ps_isr_rest shape - - - - - - - - - 1   - - - - - - - - - 1
+ps_fsr_ww shape 1 - - - - - - - - -   1 - - - - - - - - -
+ps_fsr_tt shape - - 1 - - 1 - - - -   - - 1 - - 1 - - - -
+ps_fsr_tw shape - - - 1 - - - - - -   - - - 1 - - - - - -
+ps_fsr_dy shape - - - - 1 - - - - -   - - - - 1 - - - - -
+ps_fsr_wz shape - - - - - - 1 - - -   - - - - - - 1 - - -
+ps_fsr_zz shape - - - - - - - 1 - -   - - - - - - - 1 - -
+ps_fsr_vvv shape - - - - - - - - 1 -   - - - - - - - - 1 -
+ps_fsr_rest shape - - - - - - - - - 1   - - - - - - - - - 1
+
+pdf_0 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_1 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_2 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_3 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_4 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_5 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_6 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_7 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_8 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_9 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_10 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_11 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_12 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_13 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_14 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_15 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_16 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_17 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_18 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_19 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_20 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_21 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_22 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_23 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_24 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_25 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_26 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_27 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_28 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_29 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_30 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_31 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_32 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_33 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_34 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_35 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_36 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_37 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_38 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_39 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_40 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_41 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_42 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_43 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_44 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_45 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_46 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_47 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_48 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_49 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_50 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_51 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_52 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_53 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_54 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_55 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_56 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_57 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_58 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_59 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_60 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_61 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_62 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_63 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_64 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_65 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_66 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_67 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_68 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_69 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_70 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_71 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_72 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_73 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_74 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_75 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_76 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_77 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_78 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_79 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_80 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_81 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_82 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_83 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_84 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_85 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_86 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_87 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_88 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_89 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_90 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_91 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_92 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_93 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_94 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_95 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_96 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_97 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_98 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_99 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+pdf_100 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+
+CMS_SMP24011_fake_QCD_etauh_fitparam0_2022 shape - 1 - - - - - - - -   - - - - - - - - - -
+CMS_SMP24011_fake_QCD_etauh_fitparam1_2022 shape - 1 - - - - - - - -   - - - - - - - - - -
+CMS_SMP24011_fake_QCD_etauh_fitparam2_2022 shape - 1 - - - - - - - -   - - - - - - - - - -
+CMS_SMP24011_fake_Wjets_etauh_fitparam0_2022 shape - 1 - - - - - - - -   - - - - - - - - - -
+CMS_SMP24011_fake_Wjets_etauh_fitparam1_2022 shape - 1 - - - - - - - -   - - - - - - - - - -
+CMS_SMP24011_fake_Wjets_etauh_fitparam2_2022 shape - 1 - - - - - - - -   - - - - - - - - - -
+
+CMS_SMP24011_fake_QCD_mutauh_fitparam0_2022 shape - - - - - - - - - -   - 1 - - - - - - - -
+CMS_SMP24011_fake_QCD_mutauh_fitparam1_2022 shape - - - - - - - - - -   - 1 - - - - - - - -
+CMS_SMP24011_fake_QCD_mutauh_fitparam2_2022 shape - - - - - - - - - -   - 1 - - - - - - - -
+CMS_SMP24011_fake_Wjets_mutauh_fitparam0_2022 shape - - - - - - - - - -   - 1 - - - - - - - -
+CMS_SMP24011_fake_Wjets_mutauh_fitparam1_2022 shape - - - - - - - - - -   - 1 - - - - - - - -
+CMS_SMP24011_fake_Wjets_mutauh_fitparam2_2022 shape - - - - - - - - - -   - 1 - - - - - - - -
+
+CMS_SMP24011_fake_etauhfracs_1b_2022 shape - 1 - - - - - - - -   - - - - - - - - - -
+CMS_SMP24011_fake_mutauhfracs_1b_2022 shape - - - - - - - - - -   - 1 - - - - - - - -
+
+CMS_SMP24011_fake_globalnorm_etauh_2022 lnN - 1.1 - - - - - - - -   - - - - - - - - - -
+CMS_SMP24011_fake_globalnorm_mutauh_2022 lnN - - - - - - - - - -   - 1.1 - - - - - - - -
+
+CMS_eff_e_id_2022 shape 1 - 1 1 1 1 1 1 1 1   - - - - - - - - - -
+CMS_eff_e_trigger_2022 shape 1 - 1 1 1 1 1 1 1 1   - - - - - - - - - -
+
+CMS_eff_m_id_uncorrelated_2022 shape - - - - - - - - - -   1 - 1 1 1 1 1 1 1 1
+CMS_eff_m_id_correlated shape - - - - - - - - - -   1 - 1 1 1 1 1 1 1 1
+CMS_eff_m_iso_uncorrelated_2022 shape - - - - - - - - - -   1 - 1 1 1 1 1 1 1 1
+CMS_eff_m_iso_correlated shape - - - - - - - - - -   1 - 1 1 1 1 1 1 1 1
+CMS_eff_m_trigger_uncorrelated_2022 shape - - - - - - - - - -   1 - 1 1 1 1 1 1 1 1
+CMS_eff_m_trigger_correlated shape - - - - - - - - - -   1 - 1 1 1 1 1 1 1 1
+
+CMS_eff_t_allDM_correlated shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_eff_t_allDM_uncorrelated_2022 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_eff_t_DM0_2022 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_eff_t_DM0_2022 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_scale_t_DM0_2022 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_eff_t_DM1_2022 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_eff_t_DM1_2022 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_scale_t_DM1_2022 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_eff_t_DM10_2022 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_eff_t_DM10_2022 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_scale_t_DM10_2022 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_eff_t_DM11_2022 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_eff_t_DM11_2022 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_scale_t_DM11_2022 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+
+CMS_btag_fixedWP_comb_bc_bfragmentation shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_btag_fixedWP_comb_bc_colorreconnection shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_btag_fixedWP_comb_bc_hdamp shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_btag_fixedWP_comb_bc_jer shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_btag_fixedWP_comb_bc_jes shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_btag_fixedWP_comb_bc_pdf shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_btag_fixedWP_comb_bc_pileup shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_btag_fixedWP_comb_bc_topmass shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_btag_fixedWP_comb_bc_type3 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_btag_fixedWP_comb_bc_uncorrelated_2022 shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+CMS_btag_fixedWP_incl_light_correlated shape 1 - 1 1 1 1 1 1 1 1   1 - 1 1 1 1 1 1 1 1
+
+* autoMCStats 0 0 1
